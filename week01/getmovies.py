@@ -50,6 +50,6 @@ def pages_details(url):
     movie = pd.DataFrame(data = mylist,columns = ['moviename','movietype','release_time'])
     #print(movie1)
     #movie1 = pd.DataFrame(data = mylist, index = [moviename,movietype,times])
-    movie.to_csv('./movie.csv', encoding='gbk', index=False)
+    movie.to_csv('./movie.csv', encoding='utf8', index=False)
 
 pages_details('https://maoyan.com/films?showType=3')
